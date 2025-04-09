@@ -31,14 +31,14 @@ for a_tag in carousel_items:
             "link": full_link_url
         })
 
-# Print results
-#for item in results:
-#    print(f"Image: {item['image_url']}")
-#    print(f"Alt Text: {item['alt_text']}")
-#    print(f"Link: {item['link']}\n")
-
 # Save the results to a JSON file
 with open("carousel_data.json", "w") as json_file:
     json.dump(results, json_file, indent=4)
     
 print("Data saved to carousel_data.json")
+
+# Print results
+#for item in results:
+#    print(f"Image: {item['image_url']}")
+#    print(f"Alt Text: {item['alt_text']}")
+#    print(f"Link: {item['link']}\n")
